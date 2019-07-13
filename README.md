@@ -1,6 +1,6 @@
 ## Neutron 3D
 
-Live demo: [Neutron 3D](https://oicu8.github.io/3dneutron/index.html)
+Live demo: [Neutron 3D](https://oicu8.github.io/3dNeutron/)
 
 Neutron 3D Blockchain Visualizer using Three.js, Cannon.js and Insight API.
 
@@ -9,12 +9,12 @@ Neutron 3D Blockchain Visualizer using Three.js, Cannon.js and Insight API.
 Clone the repo:
 
 ```
-git clone https://github.com/oicu8/3dneutron
+git clone https://github.com/oicu8/3dNeutron.git
 ```
 
 Install npm packages:
 ```
-cd 3dneutron && npm install
+cd 3dNeutron && npm install
 ```
 
 Build:
