@@ -1,0 +1,18 @@
+{
+  "name": "3dneutron",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "browserify ./src/3dneutron.js | uglifyjs -c > ./build/3dneutron.js",
+    "build:debug": "browserify ./src/3dneutron.js -o ./build/3dneutron.js"
+  },
+  "dependencies": {
+    "cannon": "^0.6.2",
+    "socket.io-client": "^1.7.4",
+    "three": "^0.92.0"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "uglifyify": "^5.0.0"
+  }
+}
