@@ -916,7 +916,7 @@ DashMachine.prototype.net = function (_this) {
     function pingBestBlock() {
         // Wait for enough inactivity
         if (lastConnected ? (new Date() - lastConnected > 30000) : true) {
-            get("status?q=getBestBlockHash", function (res1) {
+            get("getbestblockhash", function (res1) {
                 // first ping?
                 if (!_this.bestBlock)
                     get("block/" + res1.bestblockhash, function (res) {
