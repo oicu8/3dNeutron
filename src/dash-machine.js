@@ -919,7 +919,7 @@ DashMachine.prototype.net = function (_this) {
             get("getbestblockhash", function (res1) {
                 // first ping?
                 if (!_this.bestBlock)
-                    get("block/" + res1.bestblockhash, function (res) {
+                    get("block_crawler.php?block_hash=" + res1.bestblockhash, function (res) {
                         if (res && !_this.bestBlock) {
                             getBlockTX(res);
                         }
