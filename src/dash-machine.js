@@ -916,10 +916,10 @@ DashMachine.prototype.net = function (_this) {
     function pingBestBlock() {
         // Wait for enough inactivity
         if (lastConnected ? (new Date() - lastConnected > 30000) : true) {
-            get("getbestblockhash", function (res1) {
+            get("status?q=getBestBlockHash", function (res1) {
                 // first ping?
                 if (!_this.bestBlock)
-                    get("block_crawler.php?block_hash=" + res1.bestblockhash, function (res) {
+                    get("block/" + res1.bestblockhash, function (res) {
                         if (res && !_this.bestBlock) {
                             getBlockTX(res);
                         }
