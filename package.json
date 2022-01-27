@@ -9,7 +9,7 @@
   "dependencies": {
     "cannon": "^0.6.2",
     "socket.io-client": "^1.7.4",
-    "three": "^0.92.0"
+    "three": "^0.137.0"
   },
   "devDependencies": {
     "browserify": "^16.2.2",
